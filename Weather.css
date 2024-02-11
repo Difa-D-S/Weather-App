@@ -1,0 +1,46 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+}
+
+.card{
+    width:100%;
+    border-radius: 20px !important;
+    max-width: 420px;
+    padding: 20px;
+    background-color:  #eaeaea;
+    margin: 1em;
+}
+
+.temp{
+    margin-bottom: 10px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loadimg{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loadimg:after{
+    visibility: visible;
+    content: "Loading...";
+    color: black;
+    position:absolute;
+    top: 0;
+    left:20px;
+}
