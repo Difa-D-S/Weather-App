@@ -4,30 +4,78 @@ section{
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #222;
+    background-color: #1b025b;
 }
 
 .card{
     width:100%;
+    border: 1px solid white !important;
     border-radius: 20px !important;
     max-width: 420px;
     padding: 20px;
-    background-color:  #eaeaea;
-    margin: 1em;
+    background:linear-gradient(rgba(18, 164, 147, 0.3), rgba(0,0,0,0.3));
+    
 }
 
 .temp{
     margin-bottom: 10px;
 }
 
-.flex{
+.search{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.flex{
+    text-align: center;
+}
+
+.search input{
+    width: 70%;
+    height: 35px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.search button{
+    border-radius: 10px;
+    position: absolute;
+    right:18%;
+    width: 35px;
+    height: 35px;
 }
 
 .description{
     text-transform: capitalize;
-    margin-left: 8px;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.temp{
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.weather{
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.icon{
+    width: 150px;
+    filter: drop-shadow(3px 2px 8px #fff4f4);
+}
+
+.row{
+    color:black;
+    font-weight: bold;
+    font-family:serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: rgba(0,0,0,0.1);
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .weather.loadimg{
@@ -39,8 +87,7 @@ section{
 .weather.loadimg:after{
     visibility: visible;
     content: "Loading...";
-    color: black;
+    color: white;
     position:absolute;
-    top: 0;
-    left:20px;
+    top:0px;
 }
